@@ -163,5 +163,7 @@ int main(void)
     delete[] S;
   } // Perform simulation over the points
 
+  ouf.close();
+
   return 0;
 }
