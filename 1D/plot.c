@@ -1,3 +1,10 @@
+/* Written By : Eric Tan
+ *
+ * Plot of the analytic solution for the 1D Ising model.
+ * Compiles with : gcc
+ * Flags : -g -Wall -lm
+ */
+
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
@@ -7,7 +14,7 @@
 double f(double T)
 {
   double E = - sinh(1.0 / T) * cosh(1.0 / T) * (pow(cosh(1.0 / T), N - 2)
-             + pow(sinh(1.0 / T), N - 2)) / (pow(cosh(1.0 / T), N) 
+             + pow(sinh(1.0 / T), N - 2)) / (pow(cosh(1.0 / T), N)
              + pow(sinh(1.0 / T), N));
 
   return E;
