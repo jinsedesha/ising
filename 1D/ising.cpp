@@ -61,7 +61,8 @@ void sweep(int *S, const int N, const double B, ofstream &ouf)
   double dE, r;
   double E[SWEEP];
 
-  for (int i = 0; i < N * SWEEP; i++)
+  // Note that for loop starts at 1 to avoid measuring a randomly set array
+  for (int i = 1; i <= N * SWEEP; i++)
   {
     r     = distribution(engine);
     x     = get_pos(N);
