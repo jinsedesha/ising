@@ -1,0 +1,4 @@
+This directory contains code for the 1D Ising model.
+There are 2 programs, 1 for the Monte Carlo simulation and one for
+the exact solution.
+Also, there is a plot script for plotting.
